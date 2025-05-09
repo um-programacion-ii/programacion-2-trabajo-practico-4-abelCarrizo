@@ -7,6 +7,11 @@
 ![JUnit5](https://img.shields.io/badge/JUnit-5.10.1-green)
 ![Mockito](https://img.shields.io/badge/Mockito-5.8.0-blue)
 
+<details>
+<summary>
+    📋<strong>Mostrar consigna completa</strong>
+</summary>
+
 ## ⚠️ Importante: Antes de Comenzar
 
 1. **Lectura Completa**
@@ -101,10 +106,6 @@ git checkout -b develop
 git push -u origin develop
 ```
 
-## 🎯 Objetivo General
-
-Desarrollar un sistema de gestión de biblioteca utilizando Spring Framework, implementando una arquitectura en capas y aplicando los principios SOLID. El sistema deberá manejar diferentes tipos de recursos bibliográficos, préstamos y usuarios, utilizando una base de datos en memoria para la persistencia de datos.
-
 ## ⏰ Tiempo Estimado y Entrega
 
 - **Tiempo estimado de realización:** 24-30 horas
@@ -118,19 +119,15 @@ Desarrollar un sistema de gestión de biblioteca utilizando Spring Framework, im
 
 > 💡 **Nota**: Esta estimación considera la experiencia adquirida en trabajos anteriores y la complejidad de implementar una arquitectura en capas con Spring Framework. El tiempo se ha ajustado considerando que no se requiere implementación de persistencia real.
 
-## 👨‍🎓 Información del Alumno
-- **Nombre y Apellido**: [Nombre y Apellido del Alumno]
-- **Legajo**: [Número de Legajo]
-
 ## 📋 Requisitos Previos
 
 - Java 21 o superior
 - Maven 3.9.0 o superior
 - Conocimientos básicos de:
-  - Programación orientada a objetos
-  - Principios SOLID
-  - Spring Framework básico
-  - REST APIs
+   - Programación orientada a objetos
+   - Principios SOLID
+   - Spring Framework básico
+   - REST APIs
 
 ## 🧩 Tecnologías y Herramientas
 
@@ -195,13 +192,13 @@ public enum EstadoLibro {
 
 2. Implementar servicios:
    - Crear interfaces de servicio:
-     - `LibroService`
-     - `UsuarioService`
-     - `PrestamoService`
+      - `LibroService`
+      - `UsuarioService`
+      - `PrestamoService`
    - Implementar clases concretas:
-     - `LibroServiceImpl`
-     - `UsuarioServiceImpl`
-     - `PrestamoServiceImpl`
+      - `LibroServiceImpl`
+      - `UsuarioServiceImpl`
+      - `PrestamoServiceImpl`
 
 #### Ejemplo de Implementación
 ```java
@@ -457,10 +454,10 @@ class LibroServiceImplTest {
 - ✅ Pull Requests revisados y aprobados
 - ✅ Project actualizado
 - ✅ README.md completo con:
-  - Instrucciones de instalación
-  - Requisitos del sistema
-  - Ejemplos de uso
-  - Documentación de endpoints
+   - Instrucciones de instalación
+   - Requisitos del sistema
+   - Ejemplos de uso
+   - Documentación de endpoints
 
 ## 📚 Recursos Adicionales
 
@@ -535,3 +532,54 @@ El uso de Inteligencia Artificial (IA) en este trabajo práctico debe seguir las
 ## 📝 Licencia
 
 Este trabajo es parte del curso de Programación II de Ingeniería en Informática. Uso educativo únicamente.
+</details>
+
+## 📑 Índice
+- [🎯 Objetivo General](#-objetivo-general)
+- [👨‍🎓 Identificación del Alumno](#-identificación-del-alumno)
+- [📂 Estructura del Proyecto](#-estructura-del-proyecto)
+
+## 🎯 Objetivo General
+
+Desarrollar un sistema de gestión de biblioteca utilizando Spring Framework, implementando una arquitectura en capas y aplicando los principios SOLID. El sistema deberá manejar diferentes tipos de recursos bibliográficos, préstamos y usuarios, utilizando una base de datos en memoria para la persistencia de datos.
+
+## 👨‍🎓 Información del Alumno
+- **Nombre y Apellido**: Abel Carrizo
+- **Legajo**: 59164
+
+## 📂 Estructura del Proyecto
+
+```text
+programacion-2-trabajo-practico-4-abelCarrizo/   # Proyecto completo de la práctica 4
+├── .gitattributes        # Configuración de atributos Git
+├── .gitignore            # Define qué archivos/directorios ignora Git
+├── LICENSE.md            # Licencia del proyecto
+├── README.md             # Documentación general del repositorio
+└── sistemaGestionBiblioteca/   # Módulo principal de la aplicación Spring Boot
+    ├── .mvn/                   # Configuración del Maven Wrapper
+    │   └── wrapper/
+    │       └── maven-wrapper.properties   # Configura la versión específica de Maven a usar
+    ├── mvnw                    # Script de Maven Wrapper para Unix/Linux
+    ├── mvnw.cmd                # Script de Maven Wrapper para Windows
+    ├── pom.xml          # Archivo de configuración de Maven (dependencias, plugins, etc.)
+    └── src
+        ├── main         # Código fuente de la aplicación
+        │   ├── java
+        │   │   └── app
+        │   │       └── biblioteca
+        │   │           └── sistemagestionbiblioteca
+        │   │               └── SistemaGestionBibliotecaApplication.java  
+        │   │                   # Clase principal de Spring Boot (punto de entrada)
+        │   └── resources
+        │       └── application.properties   # Archivo de configuración de Spring Boot
+        └── test        # Código de pruebas
+            └── java
+                └── app
+                    └── biblioteca
+                        └── sistemagestionbiblioteca
+                            └── SistemaGestionBibliotecaApplicationTests.java
+                                # Test de integración básica que arranca el contexto Spring
+
+```
+
+---
