@@ -563,14 +563,15 @@ programacion-2-trabajo-practico-4-abelCarrizo/   # Proyecto completo de la prác
     ├── mvnw.cmd                # Script de Maven Wrapper para Windows
     ├── pom.xml          # Archivo de configuración de Maven (dependencias, plugins, etc.)
     └── src
-        ├── main        # Código fuente de la aplicación
-        │   └── java
-        │       └── app
-        │           └── biblioteca
-        │               └── sistemagestionbiblioteca
-        │                   └── SistemaGestionBibliotecaApplication.java  
-        │                       # Clase principal de Spring Boot (punto de entrada)
-        │
+        ├── main         # Código fuente de la aplicación
+        │   ├── java
+        │   │   └── app
+        │   │       └── biblioteca
+        │   │           └── sistemagestionbiblioteca
+        │   │               └── SistemaGestionBibliotecaApplication.java  
+        │   │                   # Clase principal de Spring Boot (punto de entrada)
+        │   └── resources
+        │       └── application.properties   # Archivo de configuración de Spring Boot
         └── test        # Código de pruebas
             └── java
                 └── app
