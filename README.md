@@ -556,8 +556,11 @@ programacion-2-trabajo-practico-4-abelCarrizo/   # Proyecto completo de la prác
 ├── LICENSE.md            # Licencia del proyecto
 ├── README.md             # Documentación general del repositorio
 └── sistemaGestionBiblioteca/   # Módulo principal de la aplicación Spring Boot
-    ├── mvnw             # Wrapper de Maven para Unix (ejecutar mvn sin instalar Maven)
-    ├── mvnw.cmd         # Wrapper de Maven para Windows
+    ├── .mvn/                   # Configuración del Maven Wrapper
+    │   └── wrapper/
+    │       └── maven-wrapper.properties   # Configura la versión específica de Maven a usar
+    ├── mvnw                    # Script de Maven Wrapper para Unix/Linux
+    ├── mvnw.cmd                # Script de Maven Wrapper para Windows
     ├── pom.xml          # Descriptor Maven: dependencias, plugins y configuración de build
     └── src
         ├── main        # Código fuente de la aplicación
