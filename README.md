@@ -561,7 +561,7 @@ programacion-2-trabajo-practico-4-abelCarrizo/   # Proyecto completo de la prác
     │       └── maven-wrapper.properties   # Configura la versión específica de Maven a usar
     ├── mvnw                    # Script de Maven Wrapper para Unix/Linux
     ├── mvnw.cmd                # Script de Maven Wrapper para Windows
-    ├── pom.xml          # Descriptor Maven: dependencias, plugins y configuración de build
+    ├── pom.xml          # Archivo de configuración de Maven (dependencias, plugins, etc.)
     └── src
         ├── main        # Código fuente de la aplicación
         │   └── java
