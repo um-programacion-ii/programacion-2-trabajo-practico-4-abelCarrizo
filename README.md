@@ -583,6 +583,14 @@ programacion-2-trabajo-practico-4-abelCarrizo/
         │   │               │       ├── LibroRepositoryImpl.java       # Implementación del repositorio de Libros
         │   │               │       ├── PrestamoRepositoryImpl.java    # Implementación del repositorio de Préstamos
         │   │               │       └── UsuarioRepositoryImpl.java     # Implementación del repositorio de Usuarios
+        │   │               ├── services/
+        │   │               │   ├── LibroService.java          # Interface del servicio para Libros
+        │   │               │   ├── PrestamoService.java       # Interface del servicio para Préstamos
+        │   │               │   ├── UsuarioService.java        # Interface del servicio para Usuarios
+        │   │               │   └── impl/
+        │   │               │       ├── LibroServiceImpl.java        # Implementación del servicio de Libros
+        │   │               │       ├── PrestamoServiceImpl.java     # Implementación del servicio de Préstamos
+        │   │               │       └── UsuarioServiceImpl.java      # Implementación del servicio de Usuarios
         │   └── resources
         │       └── application.properties   # Archivo de configuración de Spring Boot
         └── test        # Código de pruebas
@@ -590,8 +598,7 @@ programacion-2-trabajo-practico-4-abelCarrizo/
                 └── app
                     └── biblioteca
                         └── sistemagestionbiblioteca
-                            └── SistemaGestionBibliotecaApplicationTests.java   # Test de integración básica que arranca el contexto Spring
-                                
+                            └── SistemaGestionBibliotecaApplicationTests.java   # Test de integración básica que arranca el contexto Spring                               
 ```
 
 ---
