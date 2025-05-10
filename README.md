@@ -536,7 +536,7 @@ Este trabajo es parte del curso de Programación II de Ingeniería en Informáti
 
 ## 📑 Índice
 - [🎯 Objetivo General](#-objetivo-general)
-- [👨‍🎓 Identificación del Alumno](#-identificación-del-alumno)
+- [👨‍🎓 Información del Alumno](#-información-del-alumno)
 - [📂 Estructura del Proyecto](#-estructura-del-proyecto)
 
 ## 🎯 Objetivo General
@@ -568,7 +568,13 @@ programacion-2-trabajo-practico-4-abelCarrizo/   # Proyecto completo de la prác
         │   │   └── app
         │   │       └── biblioteca
         │   │           └── sistemagestionbiblioteca
-        │   │               └── SistemaGestionBibliotecaApplication.java  
+        │   │               │── SistemaGestionBibliotecaApplication.java
+        │   │               └── models/
+        │   │                   ├── EstadoLibro.java           # Enum para representar estados de un libro
+        │   │                   ├── EstadoUsuario.java         # Enum para representar estados de un usuario
+        │   │                   ├── Libro.java                 # Modelo de Libros
+        │   │                   ├── Prestamo.java              # Modelo de Prestamos
+        │   │                   └── Usuario.java               # Modelo de Usuarios
         │   │                   # Clase principal de Spring Boot (punto de entrada)
         │   └── resources
         │       └── application.properties   # Archivo de configuración de Spring Boot
