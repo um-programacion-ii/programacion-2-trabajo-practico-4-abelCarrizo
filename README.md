@@ -550,7 +550,7 @@ Desarrollar un sistema de gestión de biblioteca utilizando Spring Framework, im
 ## 📂 Estructura del Proyecto
 
 ```text
-programacion-2-trabajo-practico-4-abelCarrizo/   # Proyecto completo de la práctica 4
+programacion-2-trabajo-practico-4-abelCarrizo/
 ├── .gitattributes        # Configuración de atributos Git
 ├── .gitignore            # Define qué archivos/directorios ignora Git
 ├── LICENSE.md            # Licencia del proyecto
@@ -559,8 +559,8 @@ programacion-2-trabajo-practico-4-abelCarrizo/   # Proyecto completo de la prác
     ├── .mvn/                   # Configuración del Maven Wrapper
     │   └── wrapper/
     │       └── maven-wrapper.properties   # Configura la versión específica de Maven a usar
-    ├── mvnw                    # Script de Maven Wrapper para Unix/Linux
-    ├── mvnw.cmd                # Script de Maven Wrapper para Windows
+    ├── mvnw             # Script de Maven Wrapper para Unix/Linux
+    ├── mvnw.cmd         # Script de Maven Wrapper para Windows
     ├── pom.xml          # Archivo de configuración de Maven (dependencias, plugins, etc.)
     └── src
         ├── main         # Código fuente de la aplicación
@@ -568,14 +568,13 @@ programacion-2-trabajo-practico-4-abelCarrizo/   # Proyecto completo de la prác
         │   │   └── app
         │   │       └── biblioteca
         │   │           └── sistemagestionbiblioteca
-        │   │               │── SistemaGestionBibliotecaApplication.java
+        │   │               │── SistemaGestionBibliotecaApplication.java    # Clase principal de Spring Boot (punto de entrada)
         │   │               └── models/
         │   │                   ├── EstadoLibro.java           # Enum para representar estados de un libro
         │   │                   ├── EstadoUsuario.java         # Enum para representar estados de un usuario
         │   │                   ├── Libro.java                 # Modelo de Libros
         │   │                   ├── Prestamo.java              # Modelo de Prestamos
         │   │                   └── Usuario.java               # Modelo de Usuarios
-        │   │                   # Clase principal de Spring Boot (punto de entrada)
         │   └── resources
         │       └── application.properties   # Archivo de configuración de Spring Boot
         └── test        # Código de pruebas
@@ -583,9 +582,8 @@ programacion-2-trabajo-practico-4-abelCarrizo/   # Proyecto completo de la prác
                 └── app
                     └── biblioteca
                         └── sistemagestionbiblioteca
-                            └── SistemaGestionBibliotecaApplicationTests.java
-                                # Test de integración básica que arranca el contexto Spring
-
+                            └── SistemaGestionBibliotecaApplicationTests.java   # Test de integración básica que arranca el contexto Spring
+                                
 ```
 
 ---
