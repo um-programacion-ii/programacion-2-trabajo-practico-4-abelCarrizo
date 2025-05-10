@@ -569,12 +569,20 @@ programacion-2-trabajo-practico-4-abelCarrizo/
         │   │       └── biblioteca
         │   │           └── sistemagestionbiblioteca
         │   │               │── SistemaGestionBibliotecaApplication.java    # Clase principal de Spring Boot (punto de entrada)
-        │   │               └── models/
-        │   │                   ├── EstadoLibro.java           # Enum para representar estados de un libro
-        │   │                   ├── EstadoUsuario.java         # Enum para representar estados de un usuario
-        │   │                   ├── Libro.java                 # Modelo de Libros
-        │   │                   ├── Prestamo.java              # Modelo de Prestamos
-        │   │                   └── Usuario.java               # Modelo de Usuarios
+        │   │               ├── models/
+        │   │               │   ├── EstadoLibro.java           # Enum para representar estados de un libro
+        │   │               │   ├── EstadoUsuario.java         # Enum para representar estados de un usuario
+        │   │               │   ├── Libro.java                 # Modelo de Libros
+        │   │               │   ├── Prestamo.java              # Modelo de Prestamos
+        │   │               │   └── Usuario.java               # Modelo de Usuarios
+        │   │               ├── repositories/
+        │   │               │   ├── LibroRepository.java       # Interface del repositorio para Libros
+        │   │               │   ├── PrestamoRepository.java    # Interface del repositorio para Préstamos
+        │   │               │   ├── UsuarioRepository.java     # Interface del repositorio para Usuarios
+        │   │               │   └── impl/
+        │   │               │       ├── LibroRepositoryImpl.java       # Implementación del repositorio de Libros
+        │   │               │       ├── PrestamoRepositoryImpl.java    # Implementación del repositorio de Préstamos
+        │   │               │       └── UsuarioRepositoryImpl.java     # Implementación del repositorio de Usuarios
         │   └── resources
         │       └── application.properties   # Archivo de configuración de Spring Boot
         └── test        # Código de pruebas
