@@ -1,5 +1,6 @@
 package app.biblioteca.sistemagestionbiblioteca.services.impl;
 
+import app.biblioteca.sistemagestionbiblioteca.exceptions.UsuarioNotFoundException;
 import app.biblioteca.sistemagestionbiblioteca.models.Usuario;
 import app.biblioteca.sistemagestionbiblioteca.repositories.UsuarioRepository;
 import app.biblioteca.sistemagestionbiblioteca.services.UsuarioService;
@@ -18,7 +19,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     @Override
     public Usuario buscarPorId(Long id) {
         return usuarioRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Usuario no encontrado con ID: " + id));
+                .orElseThrow(() -> new UsuarioNotFoundException(id));
     }
 
     @Override
@@ -33,13 +34,16 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public void eliminar(Long id) {
+        if (!usuarioRepository.existsById(id)) {
+            throw new UsuarioNotFoundException(id);
+        }
         usuarioRepository.deleteById(id);
     }
 
     @Override
     public Usuario actualizar(Long id, Usuario usuario) {
         if (!usuarioRepository.existsById(id)) {
-            throw new RuntimeException("Usuario no encontrado con ID: " + id);
+            throw new UsuarioNotFoundException(id);
         }
         usuario.setId(id);
         return usuarioRepository.save(usuario);
