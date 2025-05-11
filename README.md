@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Vg2EF-QZ)
 # 🚀 Trabajo Práctico: Sistema de Gestión de Biblioteca con Spring Framework
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.4.5-green)
@@ -5,6 +6,11 @@
 ![Maven](https://img.shields.io/badge/Maven-3.9.0-red)
 ![JUnit5](https://img.shields.io/badge/JUnit-5.10.1-green)
 ![Mockito](https://img.shields.io/badge/Mockito-5.8.0-blue)
+
+<details>
+<summary>
+    📋<strong>Mostrar consigna completa</strong>
+</summary>
 
 ## ⚠️ Importante: Antes de Comenzar
 
@@ -100,10 +106,6 @@ git checkout -b develop
 git push -u origin develop
 ```
 
-## 🎯 Objetivo General
-
-Desarrollar un sistema de gestión de biblioteca utilizando Spring Framework, implementando una arquitectura en capas y aplicando los principios SOLID. El sistema deberá manejar diferentes tipos de recursos bibliográficos, préstamos y usuarios, utilizando una base de datos en memoria para la persistencia de datos.
-
 ## ⏰ Tiempo Estimado y Entrega
 
 - **Tiempo estimado de realización:** 24-30 horas
@@ -117,19 +119,15 @@ Desarrollar un sistema de gestión de biblioteca utilizando Spring Framework, im
 
 > 💡 **Nota**: Esta estimación considera la experiencia adquirida en trabajos anteriores y la complejidad de implementar una arquitectura en capas con Spring Framework. El tiempo se ha ajustado considerando que no se requiere implementación de persistencia real.
 
-## 👨‍🎓 Información del Alumno
-- **Nombre y Apellido**: [Nombre y Apellido del Alumno]
-- **Legajo**: [Número de Legajo]
-
 ## 📋 Requisitos Previos
 
 - Java 21 o superior
 - Maven 3.9.0 o superior
 - Conocimientos básicos de:
-  - Programación orientada a objetos
-  - Principios SOLID
-  - Spring Framework básico
-  - REST APIs
+   - Programación orientada a objetos
+   - Principios SOLID
+   - Spring Framework básico
+   - REST APIs
 
 ## 🧩 Tecnologías y Herramientas
 
@@ -194,13 +192,13 @@ public enum EstadoLibro {
 
 2. Implementar servicios:
    - Crear interfaces de servicio:
-     - `LibroService`
-     - `UsuarioService`
-     - `PrestamoService`
+      - `LibroService`
+      - `UsuarioService`
+      - `PrestamoService`
    - Implementar clases concretas:
-     - `LibroServiceImpl`
-     - `UsuarioServiceImpl`
-     - `PrestamoServiceImpl`
+      - `LibroServiceImpl`
+      - `UsuarioServiceImpl`
+      - `PrestamoServiceImpl`
 
 #### Ejemplo de Implementación
 ```java
@@ -456,10 +454,10 @@ class LibroServiceImplTest {
 - ✅ Pull Requests revisados y aprobados
 - ✅ Project actualizado
 - ✅ README.md completo con:
-  - Instrucciones de instalación
-  - Requisitos del sistema
-  - Ejemplos de uso
-  - Documentación de endpoints
+   - Instrucciones de instalación
+   - Requisitos del sistema
+   - Ejemplos de uso
+   - Documentación de endpoints
 
 ## 📚 Recursos Adicionales
 
@@ -534,3 +532,146 @@ El uso de Inteligencia Artificial (IA) en este trabajo práctico debe seguir las
 ## 📝 Licencia
 
 Este trabajo es parte del curso de Programación II de Ingeniería en Informática. Uso educativo únicamente.
+</details>
+
+## 📑 Índice
+- [🎯 Objetivo General](#-objetivo-general)
+- [👨‍🎓 Información del Alumno](#-información-del-alumno)
+- [📂 Estructura del Proyecto](#-estructura-del-proyecto)
+- [🚀 Instalación y uso del proyecto](#-instalación-y-uso-del-proyecto)
+- [✅ Resultados de las pruebas](#-resultados-de-las-pruebas)
+
+## 🎯 Objetivo General
+
+Desarrollar un sistema de gestión de biblioteca utilizando Spring Framework, implementando una arquitectura en capas y aplicando los principios SOLID. El sistema deberá manejar diferentes tipos de recursos bibliográficos, préstamos y usuarios, utilizando una base de datos en memoria para la persistencia de datos.
+
+## 👨‍🎓 Información del Alumno
+- **Nombre y Apellido**: Abel Carrizo
+- **Legajo**: 59164
+
+## 📂 Estructura del Proyecto
+
+```text
+programacion-2-trabajo-practico-4-abelCarrizo/
+├── .gitattributes        # Configuración de atributos Git
+├── .gitignore            # Define qué archivos/directorios ignora Git
+├── LICENSE.md            # Licencia del proyecto
+├── README.md             # Documentación general del repositorio
+└── sistemaGestionBiblioteca/   # Módulo principal de la aplicación Spring Boot
+    ├── .mvn/                   # Configuración del Maven Wrapper
+    │   └── wrapper/
+    │       └── maven-wrapper.properties   # Configura la versión específica de Maven a usar
+    ├── mvnw             # Script de Maven Wrapper para Unix/Linux
+    ├── mvnw.cmd         # Script de Maven Wrapper para Windows
+    ├── pom.xml          # Archivo de configuración de Maven (dependencias, plugins, etc.)
+    └── src
+        ├── main         # Código fuente de la aplicación
+        │   ├── java
+        │   │   └── app
+        │   │       └── biblioteca
+        │   │           └── sistemagestionbiblioteca
+        │   │               │── SistemaGestionBibliotecaApplication.java    # Clase principal de Spring Boot (punto de entrada)
+        │   │               ├── controllers/
+        │   │               │   ├── LibroController.java              # Controlador para operaciones relacionadas con libros
+        │   │               │   ├── PrestamoController.java           # Controlador para operaciones relacionadas con préstamos
+        │   │               │   └── UsuarioController.java            # Controlador para operaciones relacionadas con usuarios
+        │   │               ├── exceptions/
+        │   │               │   ├── GlobalExceptionHandler.java       # Manejador global de excepciones
+        │   │               │   ├── LibroNotFoundException.java       # Excepción personalizada para libros no encontrados
+        │   │               │   ├── PrestamoNotFoundException.java    # Excepción personalizada para préstamos no encontrados
+        │   │               │   └── UsuarioNotFoundException.java     # Excepción personalizada para usuarios no encontrados
+        │   │               ├── models/
+        │   │               │   ├── EstadoLibro.java           # Enum para representar estados de un libro
+        │   │               │   ├── EstadoUsuario.java         # Enum para representar estados de un usuario
+        │   │               │   ├── Libro.java                 # Modelo de Libros
+        │   │               │   ├── Prestamo.java              # Modelo de Prestamos
+        │   │               │   └── Usuario.java               # Modelo de Usuarios
+        │   │               ├── repositories/
+        │   │               │   ├── LibroRepository.java       # Interface del repositorio para Libros
+        │   │               │   ├── PrestamoRepository.java    # Interface del repositorio para Préstamos
+        │   │               │   ├── UsuarioRepository.java     # Interface del repositorio para Usuarios
+        │   │               │   └── impl/
+        │   │               │       ├── LibroRepositoryImpl.java       # Implementación del repositorio de Libros
+        │   │               │       ├── PrestamoRepositoryImpl.java    # Implementación del repositorio de Préstamos
+        │   │               │       └── UsuarioRepositoryImpl.java     # Implementación del repositorio de Usuarios
+        │   │               └── services/
+        │   │                   ├── LibroService.java          # Interface del servicio para Libros
+        │   │                   ├── PrestamoService.java       # Interface del servicio para Préstamos
+        │   │                   ├── UsuarioService.java        # Interface del servicio para Usuarios
+        │   │                   └── impl/
+        │   │                       ├── LibroServiceImpl.java        # Implementación del servicio de Libros
+        │   │                       ├── PrestamoServiceImpl.java     # Implementación del servicio de Préstamos
+        │   │                       └── UsuarioServiceImpl.java      # Implementación del servicio de Usuarios
+        │   └── resources
+        │       └── application.properties   # Archivo de configuración de Spring Boot
+        └── test        # Código de pruebas
+            └── java
+                └── app
+                    └── biblioteca
+                        └── sistemagestionbiblioteca
+                            ├── SistemaGestionBibliotecaApplicationTests.java   # Test de integración básica que arranca el contexto Spring
+                            ├── controllers/
+                            │   ├── LibroControllerIntegrationTest.java             # Tests de integración para el controlador de libros
+                            │   ├── PrestamoControllerIntegrationTest.java          # Tests de integración para el controlador de préstamos
+                            │   └── UsuarioControllerIntegrationTest.java           # Tests de integración para el controlador de usuarios
+                            ├── repositores/
+                            │   └── impl/
+                            │       ├── LibroRepositoryImplTest.java                # Tests unitarios para la implementación del repositorio de libros
+                            │       ├── PrestamoRepositoryImplTest.java             # Tests unitarios para la implementación del repositorio de préstamos
+                            │       └── UsuarioRepositoryImplTest.java              # Tests unitarios para la implementación del repositorio de usuarios
+                            └── services/
+                                └── impl/
+                                    ├── LibroServiceImplTest.java                   # Tests unitarios para la implementación del servicio de libros
+                                    ├── PrestamoServiceImplTest.java                # Tests unitarios para la implementación del servicio de préstamos
+                                    └── UsuarioServiceImplTest.java                 # Tests unitarios para la implementación del servicio de usuarios                             
+```
+
+---
+
+## 🚀 Instalación y uso del proyecto
+
+1. **Clonar el repositorio**:
+
+```bash
+git clone https://github.com/um-programacion-ii/programacion-2-trabajo-practico-4-abelCarrizo.git
+cd programacion-2-trabajo-practico-4-abelCarrizo/sistemaGestionBiblioteca/
+```
+
+2. **Ejecutar aplicación**:
+
+```bash
+mvn spring-boot:run
+```
+
+Acceder en http://localhost:8080/api/libros
+
+3. **Ejecutar las pruebas**:
+
+Para validar la aplicación con pruebas unitarias:
+
+```bash
+mvn clean test
+```
+
+---
+
+## ✅ Resultados de las pruebas
+
+A partir del comando mencionado en el punto anterior para ejecutar las pruebas se obtuvieron los siguientes resultados:
+
+![Captura de pantalla de los tests exitosos](docs/img/tests.png)
+
+Estos resultados verifican la correcta ejecución de los test.
+
+---
+
+## 🤖 Asistencia de IA en el desarrollo
+
+- **Comprender Spring Boot**  
+  Ayuda a entender y sintetizar el uso de librerías y herramientas de Spring Boot.
+
+- **Interpretar la documentación oficial**  
+  Filtrado y resumen de los puntos más relevantes de las guías oficiales, resaltando mejores prácticas.
+
+- **Recomendaciones para tests y estructura**  
+  Obtuve sugerencias sobre cómo estructurar los tests, estandarizar nombres de casos de prueba y priorizar las validaciones esenciales.
