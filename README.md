@@ -538,6 +538,8 @@ Este trabajo es parte del curso de Programación II de Ingeniería en Informáti
 - [🎯 Objetivo General](#-objetivo-general)
 - [👨‍🎓 Información del Alumno](#-información-del-alumno)
 - [📂 Estructura del Proyecto](#-estructura-del-proyecto)
+- [🚀 Instalación y uso del proyecto](#-instalación-y-uso-del-proyecto)
+- [✅ Resultados de las pruebas](#-resultados-de-las-pruebas)
 
 ## 🎯 Objetivo General
 
@@ -625,3 +627,51 @@ programacion-2-trabajo-practico-4-abelCarrizo/
 ```
 
 ---
+
+## 🚀 Instalación y uso del proyecto
+
+1. **Clonar el repositorio**:
+
+```bash
+git clone https://github.com/um-programacion-ii/programacion-2-trabajo-practico-4-abelCarrizo.git
+cd programacion-2-trabajo-practico-4-abelCarrizo/sistemaGestionBiblioteca/
+```
+
+2. **Ejecutar aplicación**:
+
+```bash
+mvn spring-boot:run
+```
+
+Acceder en http://localhost:8080/api/libros
+
+3. **Ejecutar las pruebas**:
+
+Para validar la aplicación con pruebas unitarias:
+
+```bash
+mvn clean test
+```
+
+---
+
+## ✅ Resultados de las pruebas
+
+A partir del comando mencionado en el punto anterior para ejecutar las pruebas se obtuvieron los siguientes resultados:
+
+![Captura de pantalla de los tests exitosos](docs/img/tests.png)
+
+Estos resultados verifican la correcta ejecución de los test.
+
+---
+
+## 🤖 Asistencia de IA en el desarrollo
+
+- **Comprender Spring Boot**  
+  Ayuda a entender y sintetizar el uso de librerías y herramientas de Spring Boot.
+
+- **Interpretar la documentación oficial**  
+  Filtrado y resumen de los puntos más relevantes de las guías oficiales, resaltando mejores prácticas.
+
+- **Recomendaciones para tests y estructura**  
+  Obtuve sugerencias sobre cómo estructurar los tests, estandarizar nombres de casos de prueba y priorizar las validaciones esenciales.
