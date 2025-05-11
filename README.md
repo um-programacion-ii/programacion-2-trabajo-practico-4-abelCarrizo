@@ -569,6 +569,15 @@ programacion-2-trabajo-practico-4-abelCarrizo/
         │   │       └── biblioteca
         │   │           └── sistemagestionbiblioteca
         │   │               │── SistemaGestionBibliotecaApplication.java    # Clase principal de Spring Boot (punto de entrada)
+        │   │               ├── controllers/
+        │   │               │   ├── LibroController.java              # Controlador para operaciones relacionadas con libros
+        │   │               │   ├── PrestamoController.java           # Controlador para operaciones relacionadas con préstamos
+        │   │               │   └── UsuarioController.java            # Controlador para operaciones relacionadas con usuarios
+        │   │               ├── exceptions/
+        │   │               │   ├── GlobalExceptionHandler.java       # Manejador global de excepciones
+        │   │               │   ├── LibroNotFoundException.java       # Excepción personalizada para libros no encontrados
+        │   │               │   ├── PrestamoNotFoundException.java    # Excepción personalizada para préstamos no encontrados
+        │   │               │   └── UsuarioNotFoundException.java     # Excepción personalizada para usuarios no encontrados
         │   │               ├── models/
         │   │               │   ├── EstadoLibro.java           # Enum para representar estados de un libro
         │   │               │   ├── EstadoUsuario.java         # Enum para representar estados de un usuario
